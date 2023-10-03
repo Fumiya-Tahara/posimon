@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posimons', function (Blueprint $table) {
+        Schema::create('positive_thimes', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('ecology');
-            $table->integer('rarity');
-            $table->string('profile');
+            $table->string('title');
+            $table->foreignId('user_id')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('posimons');
+        Schema::dropIfExists('positive_thimes');
     }
 };

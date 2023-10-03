@@ -12,7 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('owned_posimons', function (Blueprint $table) {
-            $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('posimon_id')->constrained()->onDelete('cascade');
+            $table->integer('exp');
             $table->timestamps();
         });
     }

@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('posimon_voices', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('posimon_id')->constrained()->onDelete('cascade');
+            $table->string('voice');
+            $table->integer('state');
             $table->timestamps();
         });
     }
