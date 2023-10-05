@@ -9,7 +9,13 @@ export default function Home() {
 			</header>
 			<main>
 				<div className="wall">
-					<div className='main-button'>
+					<div className='Pad'>
+						<div id="Pad-finger">
+							<button><img src=""></img></button>
+						</div>
+						<div id="Pad-palm">
+
+						</div>
 					</div>
 				</div>
 				<div className ="floor">
