@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('owned_posimons', function (Blueprint $table) {
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('posimon_id')->constrained()->onDelete('cascade');
-            $table->integer('exp');
+        Schema::create('posimons', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('ecology');
+            $table->integer('rarity');
+            $table->string('profile');
             $table->timestamps();
         });
     }
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('owned_posimons');
+        Schema::dropIfExists('posimons');
     }
 };
