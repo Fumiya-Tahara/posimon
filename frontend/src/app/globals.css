@@ -13,6 +13,7 @@ main{
 	height: 85%;
 }
 .wall{
+	width: 100%;
 	height: 85%;
 	background-color: #FFFBEE;
 }
@@ -21,6 +22,8 @@ main{
 	background-color: #A05F2F;
 }
 .Pad{
+	width: 80%;
+	height: 80%;
 	position: relative;
 	top: 1%;
 	left: 5%;
@@ -28,27 +31,27 @@ main{
 
 .pad1{
 	position: absolute;
-	top: 98px;
+	top: 88px;
 	left: 42px;
 }
 .pad2{
 	position: absolute;
-	top: 60px;
+	top: 50px;
 	left: 140px;
 }
 .pad3{
 	position: absolute;
-	top: 105px;
+	top: 95px;
 	left: 230px;
 }
 .pad4{
 	position: absolute;
-	top: 210px;
+	top: 200px;
 	left: 255px;
 }
 .pad5{
 	position: absolute;
-	top: 180px;
+	top: 170px;
 	left: 30px;
 }
 .pad1:hover{
@@ -67,7 +70,7 @@ main{
 	transform: scale(1.05, 1.05);
 }
 .posimon{
-	width: 550px;
+	width: 50%;
 	position: absolute;
 	bottom: 30px;
 	left: 30%;
