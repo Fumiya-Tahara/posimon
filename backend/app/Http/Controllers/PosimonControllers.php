@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Posimons;
+use App\Models\OwnedPosimons;
 
 class PosimonControllers extends Controller
 {
@@ -20,7 +21,7 @@ class PosimonControllers extends Controller
         ]);
         return view('hello');
     }
-    public function get_posimon(){
+    public function get_posimon($user_id){
         $total = Posimons::sum('rarity');
         $posimons = Posimons::all();
         $sum = 0;
@@ -33,6 +34,11 @@ class PosimonControllers extends Controller
                 $sum += $posimon->rarity;
             }
         }
+        OwnedPosimons::create([
+            'user_id' => $user_id,
+            'posimon_id' => $drop,
+            'exp' => 0,
+        ]);
         $drop2 = Posimons::where('id',$drop)->get();
         $drop2 = $drop2->toJson(JSON_PRETTY_PRINT);
         return response($drop2, 200);
