@@ -42,4 +42,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function posimons(): BelongsToMany
+    {
+        return $this->belongsToMany(Posimon::class, 'owned_posimons');
+    }
 }
