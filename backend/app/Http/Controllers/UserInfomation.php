@@ -11,12 +11,12 @@ class UserInfomation extends Controller
         $email =$request->input('email');
         $password =$request->input('password');
         User::create([
-            // 'name' => $user,
-            // 'email' => $email,
-            // 'password' => $password,
-            'name' => "ずっと真夜中でいいのに。",
-            'email' => "shigrteapa@google.com",
-            'password' => "zmireamgsp98JE",
+            'name' => $user,
+            'email' => $email,
+            'password' => $password,
+            // 'name' => "ずっと真夜中でいいのに。",
+            // 'email' => "shigrteapa@google.com",
+            // 'password' => "zmireamgsp98JE",
         ]);
         return view('hello');
     }
