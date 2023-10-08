@@ -34,13 +34,27 @@ class PosimonControllers extends Controller
                 $sum += $posimon->rarity;
             }
         }
-        OwnedPosimons::create([
-            'user_id' => $user_id,
-            'posimon_id' => $drop,
-            'exp' => 0,
-        ]);
+        
+        $Owned = OwnedPosimons::where('user_id', $user_id)->where('posimon_id', $drop)->get();
+        if($Owned->isEmpty()){
+            OwnedPosimons::create([
+                'user_id' => $user_id,
+                'posimon_id' => $drop,
+                'exp' => 0,
+            ]);
+        }
         $drop2 = Posimons::where('id',$drop)->get();
         $drop2 = $drop2->toJson(JSON_PRETTY_PRINT);
-        return response($drop2, 200);
+        return response($Owned);
+    }
+
+    public function get_posimon_list($user_id){
+        $results = OwnedPosimons::join('posimons as b', 'owned_posimons.posimon_id', '=', 'b.id')
+        ->where('owned_posimons.user_id', $user_id)
+        ->select('*')
+        ->get();
+        
+        $results = $results->toJson(JSON_PRETTY_PRINT);
+        return response($results);
     }
 }
