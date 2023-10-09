@@ -8,7 +8,21 @@ html,body{
 header{
 	height: 15%;
 	background-color: #FF9533;
+	padding-top: 30px;
+	display: flex;
 }
+.page-title{
+	align-items: center;
+	margin: 0 auto;
+	height: 63%;
+	font-size: 30px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	border: solid 3px;
+	padding: 5px 40px;
+}
+
 main{
 	height: 85%;
 }
@@ -21,57 +35,70 @@ main{
 	height: 15%;
 	background-color: #A05F2F;
 }
+
 .Pad{
-	width: 80%;
-	height: 80%;
+	width: 70%;
+	height: 70%;
 	position: relative;
 	top: 1%;
 	left: 5%;
 }
 
+.pad{
+	position: absolute;
+	top: 9%;
+	left: 7%;
+	filter: opacity(50%);
+}
+
 .pad1{
 	position: absolute;
-	top: 88px;
-	left: 42px;
+	top: 80px;
+	left: 40px;
 }
 .pad2{
 	position: absolute;
-	top: 50px;
-	left: 140px;
+	top: 42px;
+	left: 132px;
 }
 .pad3{
 	position: absolute;
-	top: 95px;
-	left: 230px;
+	top: 90px;
+	left: 225px;
 }
 .pad4{
 	position: absolute;
-	top: 200px;
-	left: 255px;
+	top: 192px;
+	left: 252px;
+	z-index: 2;
 }
 .pad5{
 	position: absolute;
 	top: 170px;
 	left: 30px;
+	z-index: 1;
 }
-.pad1:hover{
-	transform: scale(1.05, 1.05);
-}
-.pad2:hover{
-	transform: scale(1.05, 1.05);
-}
-.pad3:hover{
-	transform: scale(1.05, 1.05);
-}
-.pad4:hover{
-	transform: scale(1.05, 1.05);
-}
-.pad5:hover{
+
+.pad1:hover,
+.pad2:hover,
+.pad3:hover,
+.pad4:hover,
+.pad5:hover,
+.return:hover{
 	transform: scale(1.05, 1.05);
 }
 .posimon{
-	width: 50%;
+	max-width: 500px;
+	min-width: 300px;
+	width: 40%;
 	position: absolute;
-	bottom: 30px;
+	bottom: 3%;
 	left: 30%;
+}
+
+.return{
+	max-width: 100px;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
 }

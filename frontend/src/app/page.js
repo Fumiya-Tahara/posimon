@@ -1,5 +1,6 @@
 import React from 'react'
 import './globals.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -9,15 +10,24 @@ export default function Home() {
 			</header>
 			<main>
 				<div className="wall">
-					<div className='Pad'>
-							<button><img src="/pad1.png" alt="config" className="pad1"></img><punibtn /></button>
-							<button><img src="/pad2.png" alt="positive-note" className="pad2"></img></button>
-							<button><img src="/pad3.png" alt="posimonbook" className="pad3"></img></button>
-							<button><img src="/pad4.png" alt="gacha" className="pad4"></img></button>
-							<button><img src="/pad5.png" alt="positive-game" className="pad5"></img></button>
-
-					</div>
-					<img src="kotatu2.png" alt="posimon" className='posimon'></img>
+					<div className='Pad'>		
+							<Link href="/setting">
+								<button><img src="button/pad1.png" alt="setting" className="pad1"></img><punibtn /></button>
+							</Link>
+							<Link href="/record">
+							<button><img src="button/pad2.png" alt="record" className="pad2"></img></button>
+							</Link>
+							<Link href="/record"> {/*あみばさんから来たら変更*/}
+							<button><img src="button/pad3.png" alt="posimonbook" className="pad3"></img></button>
+							</Link>
+							<Link href="/gacha">
+							<button><img src="button/pad4.png" alt="gacha" className="pad4"></img></button>
+							</Link>
+							<Link href="/game">
+							<button><img src="button/pad5.png" alt="game" className="pad5"></img></button>
+							</Link>
+							</div>
+					<img src="posimon/posita.png" alt="posimon" className='posimon'></img>
 				</div>
 				<div className ="floor">
 
