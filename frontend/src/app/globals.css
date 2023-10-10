@@ -13,10 +13,11 @@ main{
 	height: 85%;
 }
 .wall{
+	width: 100%;
 	height: 85%;
 	background-color: #FFFBEE;
 }
 .floor{
 	height: 15%;
 	background-color: #A05F2F;
-} 
+}
