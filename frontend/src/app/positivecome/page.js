@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Negativebye() {
+export default function Positivecome() {
   return (
 	<body>
 		<header>
-			<div className='page-title'>ねがてぃぶを吐き出す</div>
+			<div className='page-title'>ぽじてぃぶに変える</div>
 		</header>
 		<main>
 			<div className='wall'>

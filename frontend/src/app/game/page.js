@@ -16,7 +16,7 @@ export default function Game() {
 							{`ねがてぃぶを\n吐き出す`}
 						</button>
 				  </Link>
-					<Link href ="negativebye">
+					<Link href ="positivecome">
 						<button alt='positive-button' className='positive-btn'>
 						{`ぽじてぃぶに\n変える`}
 						</button>
