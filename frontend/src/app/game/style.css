@@ -1,6 +1,37 @@
 .wall{
-	display: inline-block;
 	text-align: center;
+}
+
+.buttons{
+	width: 100%;
+	height: 100%;
+}
+
+.buttons button{
+	margin: 6%;
+	width: 30%;
+	min-width: 200px;
+	white-space: pre-wrap;
+	font-size: 170%;
+	height: 200px;
+	color: white;
+	border: solid 5px black;
+	border-radius: 20px;
+}
+
+.negative-btn{
+	background-color: blue;
+}
+
+.positive-btn{
+	background-color: red;
+}
+
+.negative-btn:hover{
+	transform: scale(1.05, 1.05);
+}
+.positive-btn:hover{
+	transform: scale(1.05, 1.05);
 }
 
 .buttons{
