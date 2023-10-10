@@ -17,7 +17,7 @@ export default function Home() {
 							<Link href="/record">
 							<button><img src="button/pad2.png" alt="record" className="pad2"></img></button>
 							</Link>
-							<Link href="/record"> {/*あみばさんから来たら変更*/}
+							<Link href="/posimonbook">
 							<button><img src="button/pad3.png" alt="posimonbook" className="pad3"></img></button>
 							</Link>
 							<Link href="/gacha">
@@ -26,6 +26,7 @@ export default function Home() {
 							<Link href="/game">
 							<button><img src="button/pad5.png" alt="game" className="pad5"></img></button>
 							</Link>
+							{/*<img src="/pad.png" className='pad'></img>*/}
 							</div>
 					<img src="posimon/posita.png" alt="posimon" className='posimon'></img>
 				</div>

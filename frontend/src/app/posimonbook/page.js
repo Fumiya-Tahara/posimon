@@ -1,15 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Gacha() {
+export default function Posimonbook() {
   return (
 	<body>
 		<header>
-			<div className='page-title'>ガチャ</div>
+			<div className='page-title'>ぽじもん図鑑</div>
 		</header>
 		<main>
 			<div className='wall'>
-				<img src="posimon/posimika.png"></img>
+				
 			</div>
 			<div className='floor'>
 				<Link href="/">
