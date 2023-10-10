@@ -9,7 +9,6 @@ export default function Gacha() {
 		</header>
 		<main>
 			<div className='wall'>
-				<img src="posimon/posimika.png"></img>
 			</div>
 			<div className='floor'>
 				<Link href="/">
