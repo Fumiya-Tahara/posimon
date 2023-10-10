@@ -11,8 +11,16 @@ export default function Game() {
 		<main>
 			<div className='wall'>
 				<div className='buttons'>
-				  <button alt='negative-button' className='negative-btn'>ねがてぃぶを吐き出す</button>
-				  <button alt='positive-button' className='positive-btn'>ぽじてぃぶに変える</button>
+					<Link href ="negativebye">
+				  	<button alt='negative-button' className='negative-btn'>
+							{`ねがてぃぶを\n吐き出す`}
+						</button>
+				  </Link>
+					<Link href ="negativebye">
+						<button alt='positive-button' className='positive-btn'>
+						{`ぽじてぃぶに\n変える`}
+						</button>
+					</Link>
 				</div>
 			</div>
 			<div className='floor'>
