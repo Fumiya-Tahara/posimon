@@ -1,15 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
+import './style.css'
 
 export default function Game() {
   return (
 	<body>
 		<header>
-		<div className='page-title'>ポジティブ変換</div>
+		<div className='page-title'>ぽじてぃぶ変換</div>
 		</header>
 		<main>
 			<div className='wall'>
-
+				<div className='buttons'>
+				  <button alt='negative-button' className='negative-btn'>ねがてぃぶを吐き出す</button>
+				  <button alt='positive-button' className='positive-btn'>ぽじてぃぶに変える</button>
+				</div>
 			</div>
 			<div className='floor'>
 			  <Link href="/">
