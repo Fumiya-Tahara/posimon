@@ -1,0 +1,19 @@
+
+html,body{
+	height: 100%;
+}
+header{
+	height: 15%;
+	background-color: #FF9533;
+}
+main{
+	height: 85%;
+}
+.wall{
+	height: 85%;
+	background-color: #FFFBEE;
+}
+.floor{
+	height: 15%;
+	background-color: #A05F2F;
+}
