@@ -1,51 +1,31 @@
-//import './layout.css'
+import './layout.css'
 import Image from "next/image"
 
 export default function Home() {
     return(
         <body>
 			<header>
-                <div className="title">
+                <div className="page-title">
                     ぽじもん図鑑
                 </div>
 			</header>
 			<main>
 				<div className="wall">
-                    <div className="l-wrapper_06">
-                        <div className="card_06">
-                            <Image src="" alt="" />
+                    <span>
+                        <div className="images">
+                            <img src="pojimon/poland.png" alt="posimon1" className="poland"/>
+                            <img src="pojimon/posidebu.png" alt="posimon1" className="poland"/>
+                            <img src="pojimon/posimika.png" alt="posimon1" className="poland"/>  
                         </div>
-                    </div>
+                    </span>
 				</div>
-                
-				<div className ="floor">
+                <div className ="floor">
 
-				</div>
+                </div>
 			</main>
-			<footer>
+            {/* <footer className ="floor">
 
-			</footer>
+            </footer> */}
 		</body>
-        // <div>
-        //     <header> ぽじもん図鑑 </header>
-        //     <main>
-        //         <div className = "wall">
-        //             <div className="l-wrapper_06">
-        //                 <div className="card_06">
-        //                     <Image src="" alt="" />
-        //                 </div>
-        //             </div>
-                
-        //             <div className="flex">
-        //                 <div>あいうえお</div>
-        //                 <div>かきくけこ</div>
-        //                 <div>さしすせそ</div>
-        //             </div>
-        //         </div>
-        //         <div className = "floor">
-        //             ああああ
-        //         </div>
-        //     </main>
-        // </div>
     )
 }

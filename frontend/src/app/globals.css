@@ -21,3 +21,57 @@ main{
 	height: 15%;
 	background-color: #A05F2F;
 }
+.Pad{
+	width: 80%;
+	height: 80%;
+	position: relative;
+	top: 1%;
+	left: 5%;
+}
+
+.pad1{
+	position: absolute;
+	top: 88px;
+	left: 42px;
+}
+.pad2{
+	position: absolute;
+	top: 50px;
+	left: 140px;
+}
+.pad3{
+	position: absolute;
+	top: 95px;
+	left: 230px;
+}
+.pad4{
+	position: absolute;
+	top: 200px;
+	left: 255px;
+}
+.pad5{
+	position: absolute;
+	top: 170px;
+	left: 30px;
+}
+.pad1:hover{
+	transform: scale(1.05, 1.05);
+}
+.pad2:hover{
+	transform: scale(1.05, 1.05);
+}
+.pad3:hover{
+	transform: scale(1.05, 1.05);
+}
+.pad4:hover{
+	transform: scale(1.05, 1.05);
+}
+.pad5:hover{
+	transform: scale(1.05, 1.05);
+}
+.posimon{
+	width: 50%;
+	position: absolute;
+	bottom: 30px;
+	left: 30%;
+}

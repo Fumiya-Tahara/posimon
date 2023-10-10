@@ -12,8 +12,21 @@ main{
 .wall{
 	height: 85%;
 	background-color: #FFFBEE;
+	overflow: auto;
+} 
+
+.images{
+	display: grid;
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 300px 300px;
+	gap: 10px;
 }
+
 .floor{
 	height: 15%;
 	background-color: #A05F2F;
+}
+
+.poland{
+	text-align : center;
 }
