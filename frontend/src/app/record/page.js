@@ -5,7 +5,7 @@ export default function Record() {
   return (
 	<body>
 			<header>
-			<div className='page-title'>ポジティブ記録</div>
+			<div className='page-title'>ぽじてぃぶ記録</div>
 			</header>
 		<main>
 			<div className='wall'>
