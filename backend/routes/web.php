@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserInfomation;
+use App\Http\Controllers\PosimonControllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/input', function () {
+    return view('input');
+});
+Route::get('/add_posimon', function () {
+    return view('add_posimon');
+});
+Route::post('/add_user', [UserInfomation::class, 'add_user']);
+Route::post('/add_posimon', [PosimonControllers::class, 'add_posimon']);
+Route::get('/get_posimon/{user_id}', [PosimonControllers::class, 'get_posimon']);
+Route::get('/get_posimon_list/{user_id}', [PosimonControllers::class, 'get_posimon_list']);
