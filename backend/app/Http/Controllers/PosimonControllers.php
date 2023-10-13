@@ -45,6 +45,8 @@ class PosimonControllers extends Controller
         }
         $drop2 = Posimons::where('id',$drop)->get();
         $drop2 = $drop2->toJson(JSON_PRETTY_PRINT);
+
+        \Log::debug($Owned);
         return response($Owned);
     }
 
