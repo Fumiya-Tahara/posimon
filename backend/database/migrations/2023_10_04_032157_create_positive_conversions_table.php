@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posimon_voices', function (Blueprint $table) {
+        Schema::create('positive_conversions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('posimon_id')->constrained()->onDelete('cascade');
-            $table->string('voice');
-            $table->integer('state');
+            $table->foreignId('positive_theme_id')->onDelete('cascade');
+            $table->foreignId('user_id')->onDelete('cascade');
+            $table->string('converted_word');
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('posimon_voices');
+        Schema::dropIfExists('positive_conversions');
     }
 };

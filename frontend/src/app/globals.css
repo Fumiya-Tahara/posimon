@@ -91,7 +91,7 @@ main{
 	transform: scale(1.05, 1.05);
 }
 .posimon{
-	max-width: 50px;
+	max-width: 500px;
 	min-width: 280px;
 	width: 40%;
 	position: absolute;
