@@ -2,8 +2,12 @@ import React from 'react'
 import './layout.css'
 import Image from "next/image"
 import Link from 'next/link'
+import { callPosimonList } from '../../../components/call_api'
 
-export default function Home() {
+export default async function Home() {
+     const data = await callPosimonList();
+     console.log(data);
+
     return(
         <body>
 			<header>
@@ -15,27 +19,48 @@ export default function Home() {
 				<div className="wall">
                     <span>
                         <div className="images">
-                            <Link href="posimon_profile?id=1">
-                                <button><img src="pojimon/posita.png" alt="posimon1" className="poland"/></button>
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 0},
+                                }}
+                            >
+                                <button><img src="posimon/posita.png" alt="posimon1" className="poland"/></button>
                             </Link>
-                            <Link href="posimon_profile">
-                                <img src="pojimon/posizou.png" alt="posimon1" className="poland"/>
+
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 1},
+                                }}
+                            >
+                                <img src="posimon/posizou.png" alt="posimon1" className="poland"/>
                             </Link>
                             
-                            <Link href="posimon_profile">
-                                <img src="pojimon/kotatu.png" alt="posimon1" className="poland"/>
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 2},
+                                }}
+                            >
+                                <img src="posimon/kotatu.png" alt="posimon1" className="poland"/>
                             </Link>
-                            <Link href="posimon_profile">
-                                <img src="pojimon/posidebu.png" alt="posimon1" className="poland"/>
+
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 3},
+                                }}
+                            >
+                                <img src="posimon/posidebu.png" alt="posimon1" className="poland"/>
                             </Link>
+
                             <Link href="posimon_profile">
-                                <img src="pojimon/posimika.png" alt="posimon1" className="poland"/>
+                                <img src="posimon/posimika.png" alt="posimon1" className="poland"/>
                             </Link>
+
                             <Link href="posimon_profile">
-                                <img src="pojimon/posioka.png" alt="posimon1" className="poland"/>
+                                <img src="posimon/posioka.png" alt="posimon1" className="poland"/>
                             </Link>
+
                             <Link href="posimon_profile">
-                                <img src="pojimon/poland.png" alt="posimon1" className="poland"/>
+                                <img src="posimon/poland.png" alt="posimon1" className="poland"/>
                             </Link>
                         </div>
                     </span>

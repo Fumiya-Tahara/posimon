@@ -6,10 +6,9 @@ header{
 	height: 15%;
 	background-color: #FF9533;
 }
-.page-title{
+.profile{
 	align-items: center;
-	margin: 0 auto;
-	height: 63%;
+	margin: 100px 50px;
 	font-size: 30px;
 	text-align: center;
 	background-color: white;
@@ -17,6 +16,15 @@ header{
 	border: solid 3px;
 	padding: 5px 40px;
 }
+
+.name {
+    margin-bottom:30px;
+}
+
+.ecology {
+    margin-bottom:30px;
+}
+
 main{
 	height: 85%;
 }
@@ -26,23 +34,8 @@ main{
 	overflow: auto;
 } 
 
-.images{
-	margin-top: 30px;
-	margin-bottom: 30px;
-	display: grid;
-	grid-template-columns: 120px 120px;
-	grid-template-rows: 120px 120px;
-	gap: 30px;
-	justify-content: center;
-}
 
 .floor{
 	height: 15%;
 	background-color: #A05F2F;
-}
-
-.poland{
-	text-align : center;
-	border: groove 3px #333;
-	background-color: white;
 }
