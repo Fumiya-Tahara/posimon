@@ -6,6 +6,17 @@ header{
 	height: 15%;
 	background-color: #FF9533;
 }
+.page-title{
+	align-items: center;
+	margin: 0 auto;
+	height: 63%;
+	font-size: 30px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	border: solid 3px;
+	padding: 5px 40px;
+}
 main{
 	height: 85%;
 }
@@ -16,10 +27,13 @@ main{
 } 
 
 .images{
+	margin-top: 30px;
+	margin-bottom: 30px;
 	display: grid;
 	grid-template-columns: 200px 200px;
-	grid-template-rows: 300px 300px;
-	gap: 10px;
+	grid-template-rows: 200px 200px;
+	gap: 30px;
+	justify-content: center;
 }
 
 .floor{
@@ -29,4 +43,6 @@ main{
 
 .poland{
 	text-align : center;
+	border: groove 3px #333;
+	background-color: white;
 }

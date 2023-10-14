@@ -5,14 +5,14 @@ export default function Posimonbook() {
   return (
 	<body>
 		<header>
-			<div className='page-title'>ぽじもん図鑑</div>
+			<div className='page-title'>プロフィール</div>
 		</header>
 		<main>
 			<div className='wall'>
 				
 			</div>
 			<div className='floor'>
-				<Link href="/">
+				<Link href="/posimon-book">
 					<button><img src="button/return.png" alt="戻る" className="return"></img></button>
 				</Link>
 			</div>
