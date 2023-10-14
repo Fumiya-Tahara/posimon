@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { useRouter} from 'next/navigation'
 
 function Talk(){
-	const routor = useRouter()
 	const message = document.querySelector(".posimon-voice")
 	const p = document.querySelector("p")
 

@@ -5,6 +5,7 @@
 html,body{
 	height: 100%;
 }
+
 header{
 	height: 15%;
 	background-color: #FF9533;
@@ -96,7 +97,7 @@ main{
 	width: 40%;
 	position: absolute;
 	bottom: 3%;
-	left: 30%;
+	left: 20%;
 	z-index: 1;
 }
 
@@ -104,7 +105,6 @@ main{
 	visibility: hidden;
 	position: relative;
 	display: inline-block;
-	margin: 1.5em;
 	max-width: 700px;
 	width: 65%;
 	padding: 15px;

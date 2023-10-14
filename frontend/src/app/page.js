@@ -2,13 +2,13 @@
 import React from 'react'
 import './globals.css'
 import Link from 'next/link'
-import Talk from "./components/talk"; 
+import Talk from './components/talk'
 
 export default function Home() {
   return (
 		<body>
 			<header>
-				<div className='page-title'>ぽじもん</div>
+				
 			</header>
 			<main>
 				<div className="wall">
