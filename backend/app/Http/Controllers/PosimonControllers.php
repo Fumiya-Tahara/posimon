@@ -29,7 +29,7 @@ class PosimonControllers extends Controller
         $hush = mt_rand(1, $total);
         $drop = 0;
         foreach ($posimons as $posimon) {
-            if ($posimon->rarity +$sum >= $hush){
+            if ($posimon->rarity +$sum >= $hush and $drop == 0){
                 $drop = $posimon->id;
             }else{
                 $sum += $posimon->rarity;
