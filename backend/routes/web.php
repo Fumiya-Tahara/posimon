@@ -36,6 +36,7 @@ Route::get('/add_posimon_v', function () {
     return view('add_posimon_v');
 });
 Route::post('/add_user', [UserInfomation::class, 'add_user']);
+Route::post('/update_posimon/{user_id}/{posimon_id}', [UserInfomation::class, 'update_setposimon']);
 Route::post('/add_posimon', [PosimonControllers::class, 'add_posimon']);
 Route::get('/get_posimon/{user_id}', [PosimonControllers::class, 'get_posimon']);
 Route::get('/get_posimon_list/{user_id}', [PosimonControllers::class, 'get_posimon_list']);
