@@ -9,10 +9,12 @@ class UserInfomation extends Controller
     public function add_user(Request $request) {
         $user =$request->input('name');
         $email =$request->input('email');
+        $setting_posimon_id =1;
         $password =$request->input('password');
         User::create([
             'name' => $user,
             'email' => $email,
+            'setting_posimon_id' => $setting_posimon_id,
             'password' => $password,
             // 'name' => "ずっと真夜中でいいのに。",
             // 'email' => "shigrteapa@google.com",
