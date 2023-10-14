@@ -8,7 +8,7 @@ export async function callPosimonList() {
   return data;
 }
 
-// ガチャ？
+// ガチャ
 export async function callPosimon() {
   const res = await axios.get("http://localhost:8000/api/get_posimon/1");
   const data = res.data;
