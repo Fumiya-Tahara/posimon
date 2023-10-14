@@ -62,7 +62,7 @@ class PosimonControllers extends Controller
         $posimon_id =$request->input('posimon_id');
         $voice =$request->input('voice');
         $state =$request->input('state');
-        Posimons_voices::create([
+        Posimon_voices::create([
             'posimon_id' => $posimon_id,
             'voice' => $voice,
             'state' => $state,
