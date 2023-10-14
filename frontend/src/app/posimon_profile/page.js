@@ -1,7 +1,20 @@
+"use client";
+
 import React from 'react'
 import Link from 'next/link'
+import { useSearchParams } from "next/navigation";
+//import page from "api-test"
+// import { useRouter } from "next/navigation";
+
 
 export default function Posimonbook() {
+		// const router = useRouter()
+		const searchParams = useSearchParams();
+		const id = searchParams.get("id");
+		console.log(id);
+    	//const detail = page(router.query.id);
+		document.getElementsByClassName('wall').innerHTML = id ;
+
   return (
 	<body>
 		<header>

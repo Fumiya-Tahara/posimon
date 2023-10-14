@@ -15,7 +15,7 @@ export default function Home() {
 				<div className="wall">
                     <span>
                         <div className="images">
-                            <Link href="posimon_profile">
+                            <Link href="posimon_profile?id=1">
                                 <button><img src="pojimon/posita.png" alt="posimon1" className="poland"/></button>
                             </Link>
                             <Link href="posimon_profile">
