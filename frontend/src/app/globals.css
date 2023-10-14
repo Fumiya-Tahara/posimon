@@ -101,6 +101,7 @@ main{
 }
 
 .posimon-voice{
+	visibility: hidden;
 	position: relative;
 	display: inline-block;
 	margin: 1.5em;

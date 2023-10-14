@@ -1,12 +1,14 @@
+'use client'
 import React from 'react'
 import './globals.css'
 import Link from 'next/link'
+import Talk from "./components/talk"; 
 
 export default function Home() {
   return (
 		<body>
 			<header>
-
+				<div className='page-title'>ぽじもん</div>
 			</header>
 			<main>
 				<div className="wall">
@@ -29,9 +31,9 @@ export default function Home() {
 							{/*<img src="/pad.png" className='pad'></img>*/}
 							</div>
 					
-					<img src="posimon/posita.png" alt="posimon" className='posimon' onclick=""></img>
+					<img src="posimon/posita.png" alt="posimon" className='posimon' onClick={ Talk }></img>
 						<div className='posimon-voice'>
-							<p className='message'>さばにゃんてすきじゃないんだからね</p>
+							<p className='message'>あああ</p>
 						</div>
 				</div>
 				<div className ="floor">
