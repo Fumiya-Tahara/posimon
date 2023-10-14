@@ -28,7 +28,11 @@ export default function Home() {
 							</Link>
 							{/*<img src="/pad.png" className='pad'></img>*/}
 							</div>
-					<img src="posimon/posita.png" alt="posimon" className='posimon'></img>
+					
+					<img src="posimon/posita.png" alt="posimon" className='posimon' onclick=""></img>
+						<div className='posimon-voice'>
+							<p className='message'>さばにゃんてすきじゃないんだからねなんてっこた</p>
+						</div>
 				</div>
 				<div className ="floor">
 

@@ -91,12 +91,36 @@ main{
 	transform: scale(1.05, 1.05);
 }
 .posimon{
-	max-width: 500px;
+	max-width: 600px;
 	min-width: 280px;
 	width: 40%;
 	position: absolute;
 	bottom: 3%;
 	left: 30%;
+	z-index: 1;
+}
+
+.posimon-voice{
+	max-width: 700px;
+	width: 65%;
+	padding: 10px;
+	position: relative;
+	top: 20%;
+	left: 10%;
+	z-index: 2;
+
+	background-color: white;
+	border: solid 2px;
+}
+
+.pojimon-voice:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top:  -15px;
+	border: 15px solid transparent;
+  border-left: 15px solid ;
 }
 
 .return{
