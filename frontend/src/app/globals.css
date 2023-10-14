@@ -5,18 +5,141 @@
 html,body{
 	height: 100%;
 }
+
 header{
 	height: 15%;
 	background-color: #FF9533;
+	padding-top: 30px;
+	display: flex;
 }
+.page-title{
+	align-items: center;
+	margin: 0 auto;
+	height: 63%;
+	font-size: 26px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	border: solid 3px;
+	padding: 5px 40px;
+}
+
 main{
 	height: 85%;
 }
 .wall{
+	width: 100%;
 	height: 85%;
 	background-color: #FFFBEE;
 }
 .floor{
 	height: 15%;
 	background-color: #A05F2F;
+}
+
+.Pad{
+	width: 70%;
+	height: 70%;
+	position: relative;
+	top: 1%;
+	left: 5%;
+}
+
+.pad{
+	position: absolute;
+	top: 9%;
+	left: 7%;
+	filter: opacity(50%);
+}
+
+.pad1{
+	position: absolute;
+	width: 59px;
+	top: 60px;
+	left: 34px;
+}
+.pad2{
+	position: absolute;
+	width: 65px;
+	top: 30px;
+	left: 107px;
+}
+.pad3{
+	position: absolute;
+	width: 65px;
+	top: 68px;
+	left: 180px;
+}
+.pad4{
+	position: absolute;
+	width: 72px;
+	top: 146px;
+	left: 200px;
+}
+.pad5{
+	position: absolute;
+	width: 170px;
+	top: 128px;
+	left: 26px;
+}
+
+.pad1:hover,
+.pad2:hover,
+.pad3:hover,
+.pad4:hover,
+.pad5:hover,
+.return:hover{
+	transform: scale(1.05, 1.05);
+}
+.posimon{
+	max-width: 600px;
+	min-width: 280px;
+	width: 40%;
+	position: absolute;
+	bottom: 3%;
+	left: 20%;
+	z-index: 1;
+}
+
+.posimon-voice{
+	visibility: hidden;
+	position: relative;
+	display: inline-block;
+	max-width: 700px;
+	width: 65%;
+	padding: 15px;
+	top: 18%;
+	left: 10%;
+	z-index: 2;
+	background-color: white;
+	border: solid 2px;
+	box-sizing: border-box;
+}
+
+.posimon-voice:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -15px;
+	border: 15px solid transparent;
+  border-left: 15px solid white;
+	z-index: 2;
+}
+
+.posimon-voice:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -18px;
+	border: 18px solid transparent;
+	border-left: 18px solid black;
+}
+
+.return{
+	max-width: 100px;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
 }

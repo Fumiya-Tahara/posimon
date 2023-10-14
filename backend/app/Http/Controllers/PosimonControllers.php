@@ -47,6 +47,7 @@ class PosimonControllers extends Controller
         $drop2 = Posimons::where('id',$drop)->get();
         $drop2 = $drop2->toJson(JSON_PRETTY_PRINT);
         return response($drop2, 200);
+
     }
     
     public function get_posimon_list($user_id){
@@ -58,6 +59,7 @@ class PosimonControllers extends Controller
         $results = $results->toJson(JSON_PRETTY_PRINT);
         return response($results);
     }
+
     public function add_posimon_voices(Request $request) {
         $posimon_id =$request->input('posimon_id');
         $voice =$request->input('voice');
