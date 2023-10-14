@@ -13,7 +13,7 @@ export default function maingame() {
 				<div className="positive-container">
 					<h2>今回のお題</h2>
 					<div className='theme'>{/*ここにお題を反映*/}
-						なんてこった
+						なんてこったぱんなこった
 					</div>
 					<p>↓前向きに書き換えてみよう↓</p>
   				<textarea>ぽじたはこらえるを使った。600円くらいの節約。ダイエットのさいしょの一歩をふみだした。</textarea>
