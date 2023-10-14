@@ -1,0 +1,47 @@
+.wall{
+	width: 100%;
+	height: 85%;
+	text-align: center;
+
+}
+.negative-container{
+	max-height: 70%;
+	height: 60%;
+}
+
+textarea{
+	font-size: 20px;
+	margin-top: 15%;
+	max-width: 600px;
+	width: 65%;
+	height: 50%;
+}
+
+.radiobtn{
+	margin: 30px;
+	font-size: 30px;
+}
+
+.radiobtn-2{
+	margin-right: 42px;
+}
+
+.spit{
+	position: relative;
+}
+
+.spit button{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0px 10px;
+	background-color: aqua;
+	border: solid 3px;
+	border-radius: 10px;
+	height: 100px;
+	position: absolute;
+	right: 10px;
+	bottom: -30px;
+}
+.spit button:hover{
+	transform: scale(1.05, 1.05);
+}
