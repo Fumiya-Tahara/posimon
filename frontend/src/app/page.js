@@ -33,7 +33,7 @@ export default function Home() {
 					
 					<img src="posimon/posita.png" alt="posimon" className='posimon' onClick={ Talk }></img>
 						<div className='posimon-voice'>
-							<p className='message'>あああ</p>
+							<p className='message'>いいい</p>
 						</div>
 				</div>
 				<div className ="floor">
