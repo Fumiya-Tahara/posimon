@@ -36,12 +36,16 @@ Route::get('/add_posimon_v', function () {
     return view('add_posimon_v');
 });
 Route::post('/add_user', [UserInfomation::class, 'add_user']);
+Route::post('/update_posimon/{user_id}/{posimon_id}', [UserInfomation::class, 'update_setposimon']);
 Route::post('/add_posimon', [PosimonControllers::class, 'add_posimon']);
 Route::get('/get_posimon/{user_id}', [PosimonControllers::class, 'get_posimon']);
 Route::get('/get_posimon_list/{user_id}', [PosimonControllers::class, 'get_posimon_list']);
+Route::get('/get_posimon_list_full', [PosimonControllers::class, 'get_posimon_list_full']);
+
 Route::post('/add_posimon_v', [PosimonControllers::class, 'add_posimon_voices']);
 Route::get('/get_posimon_voices/{posimon_id}', [PosimonControllers::class, 'get_posimon_voices']);
 Route::post('/up_positive_thimes', [PosithibCangeControllers::class, 'up_positive_thimes']);
 Route::post('/up_positive_conversions', [PosithibCangeControllers::class, 'up_positive_conversions']);
 Route::get('/get_positive_thimes/{user_id?}', [PosithibCangeControllers::class, 'get_positive_thimes']);
+Route::get('/get_positive_conversions/{thimes_id}', [PosithibCangeControllers::class, 'get_positive_conversions']);
 Route::get('/get_positive_conversions/{thimes_id}', [PosithibCangeControllers::class, 'get_positive_conversions']);
