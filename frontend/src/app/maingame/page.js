@@ -8,11 +8,11 @@ import "./style.css"
 export default function maingame() {
 	// const data = await callPosimonList();
 	// console.log(data);
-	const theme = "焦げた";/*{ここにお題を代入}*/
+	const theme = "スタバ飲みたい";/*{ここにお題を代入}*/
 	// console.log(data[1].ecology);
 	// const [textValue, setTextValue] = useState("");
 	// console.log(textValue);
-	let textContent = "";
+	let textContent = "ぽじたはこらえるを使った。600円くらいの節約。";
 
 	function submitTextarea(event, textContent) {
 		event.preventDefault();

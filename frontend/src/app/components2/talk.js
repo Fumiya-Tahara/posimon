@@ -7,7 +7,7 @@ function Talk(){
 
 	return(
 		message.style.visibility = "visible",
-		p.textContent = "ぴーなっつ",
+		p.textContent = "よろしくおねがいします",
 		setTimeout(function(){
 			message.style.visibility = "hidden"},1500
 		)
