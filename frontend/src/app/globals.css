@@ -5,6 +5,7 @@
 html,body{
 	height: 100%;
 }
+
 header{
 	height: 15%;
 	background-color: #FF9533;
@@ -91,12 +92,49 @@ main{
 	transform: scale(1.05, 1.05);
 }
 .posimon{
-	max-width: 500px;
+	max-width: 600px;
 	min-width: 280px;
 	width: 40%;
 	position: absolute;
 	bottom: 3%;
-	left: 30%;
+	left: 20%;
+	z-index: 1;
+}
+
+.posimon-voice{
+	visibility: hidden;
+	position: relative;
+	display: inline-block;
+	max-width: 700px;
+	width: 65%;
+	padding: 15px;
+	top: 18%;
+	left: 10%;
+	z-index: 2;
+	background-color: white;
+	border: solid 2px;
+	box-sizing: border-box;
+}
+
+.posimon-voice:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -15px;
+	border: 15px solid transparent;
+  border-left: 15px solid white;
+	z-index: 2;
+}
+
+.posimon-voice:after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -18px;
+	border: 18px solid transparent;
+	border-left: 18px solid black;
 }
 
 .return{

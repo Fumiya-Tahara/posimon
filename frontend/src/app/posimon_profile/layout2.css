@@ -1,0 +1,41 @@
+
+html,body{
+	height: 100%;
+}
+header{
+	height: 15%;
+	background-color: #FF9533;
+}
+.profile{
+	align-items: center;
+	margin: 100px 50px;
+	font-size: 30px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	border: solid 3px;
+	padding: 5px 40px;
+}
+
+.name {
+    margin-bottom:30px;
+}
+
+.ecology {
+    margin-bottom:30px;
+}
+
+main{
+	height: 85%;
+}
+.wall{
+	height: 85%;
+	background-color: #FFFBEE;
+	overflow: auto;
+} 
+
+
+.floor{
+	height: 15%;
+	background-color: #A05F2F;
+}
