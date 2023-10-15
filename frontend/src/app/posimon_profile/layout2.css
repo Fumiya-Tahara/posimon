@@ -6,15 +6,31 @@ header{
 	height: 15%;
 	background-color: #FF9533;
 }
+
+main{
+	height: 85%;
+}
+
+.wall{
+	height: 85%;
+	background-color: #FFFBEE;
+	overflow: auto;
+}
+
+.selimg {
+	width: 200px;
+	margin:auto;
+	margin-top: 30px;
+}
+
 .profile{
-	align-items: center;
-	margin: 100px 50px;
-	font-size: 30px;
+	margin: 30px 40px;
+	font-size: 15px;
 	text-align: center;
 	background-color: white;
 	border-radius: 10px;
 	border: solid 3px;
-	padding: 5px 40px;
+	padding: 5px 15px;
 }
 
 .name {
@@ -25,14 +41,8 @@ header{
     margin-bottom:30px;
 }
 
-main{
-	height: 85%;
-}
-.wall{
-	height: 85%;
-	background-color: #FFFBEE;
-	overflow: auto;
-} 
+
+
 
 
 .floor{

@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import './layout2.css'
 import { useSearchParams } from "next/navigation";
-import { callPosimonList } from '../../../components/call_api';
+import { callAllPosimon } from '../../../components/call_api';
 
 //import page from "api-test"
 
@@ -10,10 +10,12 @@ import { callPosimonList } from '../../../components/call_api';
 export default async function Posimonbook({searchParams}) {
 		const id = searchParams.index;
 		console.log(id);
-		const imgMap = {0:"posimon/posita.png", 1:"posimon/posimika.png"};
-		console.log(imgMap[0])
+		const imgMap = {0:"posimon/posita.png", 1:"posimon/posizou.png", 2:"posimon/kotatu.png", 3:"posimon/posidebu.png", 4:"posimon/posimika.png", 5:"posimon/posioka.png", 6:"posimon/poland.png", 7:"posimon/pinao.png"};
+		console.log(imgMap[0]);
 
-		const data = await callPosimonList();
+		const data = await callAllPosimon();
+		console.log("**********");
+		console.log(data);
 		console.log(data[id]);
 		
 		//console.log(img);
@@ -21,20 +23,21 @@ export default async function Posimonbook({searchParams}) {
 		//document.getElementsByClassName('wall').innerHTML = data[id];
 
   return (
-	<body>
+	 <body>
 		<header>
-			<div className='page-title'>プロフィール</div>
+			<div className='page-title'>{data[id]["name"]}</div>
 		</header>
 		<main>
 			<div className='wall'>
-			<img src={imgMap[id]}/>
+				<div className="selimg">
+				<img src={imgMap[id]}/>
+				</div>
+				 
 				<div className="profile">
-					<div className="name">名前：
-					{data[id]["name"]}</div>
 					<div className="ecology">{data[id]["ecology"]}</div>
 					{data[id]["rarite"]}
 					{data[id]["profile"]}
-				</div>
+  				</div>
 			</div>
 			<div className='floor'>
 				<Link href="/posimon-book">
@@ -45,6 +48,6 @@ export default async function Posimonbook({searchParams}) {
 		<footer>
 			
 		</footer>
-	</body>
-  )
+  	</body>
+  	)
 }

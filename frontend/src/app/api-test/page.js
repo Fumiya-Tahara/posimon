@@ -1,8 +1,8 @@
 import { callPosimonList, callPosimon, callAllPosimon } from "../../../components/call_api";
 
 async function page() {
-  const data = await callAllPosimon();
-  console.log(data);
+  const data = await callPosimonList();
+  console.log(data[1]);
 
   return (
     <div>API Test</div>

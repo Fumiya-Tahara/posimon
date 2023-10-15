@@ -51,16 +51,36 @@ export default async function Home() {
                                 <img src="posimon/posidebu.png" alt="posimon1" className="poland"/>
                             </Link>
 
-                            <Link href="posimon_profile">
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 4},
+                                }}
+                            >
                                 <img src="posimon/posimika.png" alt="posimon1" className="poland"/>
                             </Link>
 
-                            <Link href="posimon_profile">
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 5},
+                                }}
+                            >
                                 <img src="posimon/posioka.png" alt="posimon1" className="poland"/>
                             </Link>
 
-                            <Link href="posimon_profile">
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 6},
+                                }}
+                            >
                                 <img src="posimon/poland.png" alt="posimon1" className="poland"/>
+                            </Link>
+
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 7},
+                                }}
+                            >
+                                <img src="posimon/pinao.png" alt="posimon1" className="poland"/>
                             </Link>
                         </div>
                     </span>
