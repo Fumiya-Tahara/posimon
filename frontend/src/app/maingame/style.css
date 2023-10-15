@@ -24,7 +24,7 @@ h2{
 	overflow: auto;
 }
 p{
-	padding-top: 40px;
+	padding-top: 20px;
 }
 textarea{
 	font-size: 20px;
@@ -34,11 +34,11 @@ textarea{
 	height: 50%;
 }
 
-.powerbtn{
+.submitbtn{
 	position: relative;
 }
 
-.powerbtn button{
+.submitbtn button{
 	font-size: 20px;
 	font-weight: bold;
 	padding: 0px 10px;
@@ -48,8 +48,8 @@ textarea{
 	height: 100px;
 	position: absolute;
 	right: 10px;
-	bottom: -30px;
+	bottom: -180px;
 }
-.powerbtn button:hover{
+.submitbtn button:hover{
 	transform: scale(1.05, 1.05);
 }

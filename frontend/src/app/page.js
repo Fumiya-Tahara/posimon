@@ -2,13 +2,12 @@
 import React from 'react'
 import './globals.css'
 import Link from 'next/link'
-import Talk from './components/talk'
+import Talk from "./components/talk"; 
 
-export default function Home() {
+export default function Home(){
   return (
 		<body>
 			<header>
-				
 			</header>
 			<main>
 				<div className="wall">
@@ -33,7 +32,7 @@ export default function Home() {
 					
 					<img src="posimon/posita.png" alt="posimon" className='posimon' onClick={ Talk }></img>
 						<div className='posimon-voice'>
-							<p className='message'>いいい</p>
+							<p className='message'>あああ</p>
 						</div>
 				</div>
 				<div className ="floor">

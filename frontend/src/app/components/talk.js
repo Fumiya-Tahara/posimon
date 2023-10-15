@@ -1,21 +1,17 @@
 import { useRef } from "react";
-import { useRouter } from 'next/navigation';
-import { useSearchParams } from "next/navigation";
-import { callPosimonList } from "../../../components/call_api";
-import { Data } from "./data"
+import { useRouter} from 'next/navigation';
 
-export default async function Talk(){
-	const data = await callPosimonList();
-	console.log(data);
-	const message = document.querySelector(".posimon-voice");
-	const p = document.querySelector("p");
+function Talk(){
+	const message = document.querySelector(".posimon-voice")
+	const p = document.querySelector("p")
 
 	return(
 		message.style.visibility = "visible",
-		p.textContent = {Data},
+		p.textContent = "ぴーなっつ",
 		setTimeout(function(){
 			message.style.visibility = "hidden"},1500
 		)
 	)
 }
 
+export default Talk;
