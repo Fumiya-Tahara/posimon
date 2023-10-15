@@ -58,6 +58,11 @@ class PosimonControllers extends Controller
         $results = $results->toJson(JSON_PRETTY_PRINT);
         return response($results);
     }
+    public function get_posimon_list_full(){
+        $results = Posimons::all();
+        $results = $results->toJson(JSON_PRETTY_PRINT);
+        return response($results);
+    }
     public function add_posimon_voices(Request $request) {
         $posimon_id =$request->input('posimon_id');
         $voice =$request->input('voice');
