@@ -27,7 +27,7 @@ export default function Gacha() {
 				<div className='wall'>
 					<div className='contents'>
 						<div className='result'>
-								<img src = "/posimon/kotatu2.png" className="getposimon"></img>
+								<img src = "" className="getposimon"></img>
 								<img src = "/gachapon/ball.png" className="ball"></img>
 						</div>
 					</div>
