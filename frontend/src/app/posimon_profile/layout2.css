@@ -18,18 +18,19 @@ main{
 }
 
 .selimg {
-	width: 230px;
-	margin-left: 21%;
+	width: 200px;
+	margin:auto;
+	margin-top: 30px;
 }
 
 .profile{
-	margin: 30px 50px;
+	margin: 30px 40px;
 	font-size: 15px;
 	text-align: center;
 	background-color: white;
 	border-radius: 10px;
 	border: solid 3px;
-	padding: 5px 40px;
+	padding: 5px 15px;
 }
 
 .name {
