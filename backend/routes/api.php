@@ -24,3 +24,4 @@ Route::post('/add_user', [UserInfomation::class, 'add_user']);
 Route::post('/add_posimon', [PosimonControllers::class, 'add_posimon']);
 Route::get('/get_posimon/{user_id}', [PosimonControllers::class, 'get_posimon']);
 Route::get('/get_posimon_list/{user_id}', [PosimonControllers::class, 'get_posimon_list']);
+Route::get('/get_posimon_list_full', [PosimonControllers::class, 'get_posimon_list_full']);
