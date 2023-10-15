@@ -21,7 +21,7 @@ export default async function Home() {
                         <div className="images">
                             <Link href={{
                                 pathname:"posimon_profile",
-                                query: { index: 0},
+                                query: { index: 1},
                                 }}
                             >
                                 <button><img src="posimon/posita.png" alt="posimon1" className="poland"/></button>
@@ -29,7 +29,7 @@ export default async function Home() {
 
                             <Link href={{
                                 pathname:"posimon_profile",
-                                query: { index: 1},
+                                query: { index: 2},
                                 }}
                             >
                                 <img src="posimon/posizou.png" alt="posimon1" className="poland"/>
@@ -37,7 +37,7 @@ export default async function Home() {
                             
                             <Link href={{
                                 pathname:"posimon_profile",
-                                query: { index: 2},
+                                query: { index: 3},
                                 }}
                             >
                                 <img src="posimon/kotatu.png" alt="posimon1" className="poland"/>
@@ -45,22 +45,42 @@ export default async function Home() {
 
                             <Link href={{
                                 pathname:"posimon_profile",
-                                query: { index: 3},
+                                query: { index: 4},
                                 }}
                             >
                                 <img src="posimon/posidebu.png" alt="posimon1" className="poland"/>
                             </Link>
 
-                            <Link href="posimon_profile">
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 5},
+                                }}
+                            >
                                 <img src="posimon/posimika.png" alt="posimon1" className="poland"/>
                             </Link>
 
-                            <Link href="posimon_profile">
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 6},
+                                }}
+                            >
                                 <img src="posimon/posioka.png" alt="posimon1" className="poland"/>
                             </Link>
 
-                            <Link href="posimon_profile">
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 7},
+                                }}
+                            >
                                 <img src="posimon/poland.png" alt="posimon1" className="poland"/>
+                            </Link>
+
+                            <Link href={{
+                                pathname:"posimon_profile",
+                                query: { index: 8},
+                                }}
+                            >
+                                <img src="posimon/pinao.png" alt="posimon1" className="poland"/>
                             </Link>
                         </div>
                     </span>

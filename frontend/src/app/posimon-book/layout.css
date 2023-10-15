@@ -41,8 +41,15 @@ main{
 	background-color: #A05F2F;
 }
 
+.poland:hover{
+	transform: scale(1.05, 1.05);
+}
+
 .poland{
+	transform: scale(1.05, 1.05);
 	text-align : center;
 	border: groove 3px #333;
 	background-color: white;
 }
+
+
