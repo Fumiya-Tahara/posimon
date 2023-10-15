@@ -18,7 +18,7 @@ export default function Home(){
 							<Link href="/record">
 							<button><img src="button/pad2.png" alt="record" className="pad2"></img></button>
 							</Link>
-							<Link href="/posimonbook">
+							<Link href="/posimon-book">
 							<button><img src="button/pad3.png" alt="posimonbook" className="pad3"></img></button>
 							</Link>
 							<Link href="/gacha">
