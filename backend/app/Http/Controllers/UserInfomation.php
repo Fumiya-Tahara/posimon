@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 use App\Models\User;
 class UserInfomation extends Controller
 {
+    public function update_setposimon($user_id,$posimon_id){
+        $user = User::find($user_id);
+        $user->update([  
+            "setting_posimon_id" => $posimon_id,  
+        ]);  
+    }
     public function add_user(Request $request) {
         $user =$request->input('name');
         $email =$request->input('email');
@@ -16,9 +22,6 @@ class UserInfomation extends Controller
             'email' => $email,
             'setting_posimon_id' => $setting_posimon_id,
             'password' => $password,
-            // 'name' => "ずっと真夜中でいいのに。",
-            // 'email' => "shigrteapa@google.com",
-            // 'password' => "zmireamgsp98JE",
         ]);
         return view('hello');
     }
