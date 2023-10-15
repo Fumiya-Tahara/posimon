@@ -1,15 +1,31 @@
 "use client";
-import React from 'react'
+import {useState} from 'react'
 import Link from 'next/link'
 import "./style.css"
-import { callPosimonList } from '../../../components/call_api'
-import { useSearchParams } from 'next/navigation'
+// import { callPosimonList } from '../../../components/call_api'
+// import { useSearchParams } from 'next/navigation'
 
-export default async function maingame() {
-	const data = await callPosimonList();
-	console.log(data);
-	const theme = data[1].ecology;/*{ここにお題を代入}*/
-	console.log(data[1].ecology);
+export default function maingame() {
+	// const data = await callPosimonList();
+	// console.log(data);
+	const theme = "焦げた";/*{ここにお題を代入}*/
+	// console.log(data[1].ecology);
+	// const [textValue, setTextValue] = useState("");
+	// console.log(textValue);
+	let textContent = "";
+
+	function submitTextarea(event, textContent) {
+		event.preventDefault();
+		const textValue = textContent;
+		const exp = textValue.length;
+		console.log(textValue);
+		alert("いい調子！"+ exp + "exp獲得！！");
+	}
+
+	function getTextarea(event) {
+		textContent = event.target.value;
+		return textContent;
+	}
 	
   return (
 	<body>
@@ -24,8 +40,9 @@ export default async function maingame() {
 						{theme}
 					</div>
 					<p>↓前向きに書き換えてみよう↓</p>
-					<form onSubmit={() => console.log("あああ")}>
-						<textarea name='positive'></textarea>
+					{/* <form onSubmit={() => console.log("あああ")}> */}
+					<form onSubmit={(event) => submitTextarea(event, textContent)}>
+						<textarea name='positive' onChange={(event) => getTextarea(event)}></textarea>
 						<div className='submitbtn'>
 							<button type='submit' value="positive-text">ぽじてぃぶ送信</button>
 						</div>

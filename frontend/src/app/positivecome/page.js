@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import '../game/style.css'
 
 export default function Positivecome() {
   return (
