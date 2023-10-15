@@ -1,4 +1,4 @@
-import { callPosimonList, callPosimon } from "../../../components/call_api";
+import { callPosimonList, callPosimon, callAllPosimon } from "../../../components/call_api";
 
 async function page() {
   const data = await callPosimonList();
