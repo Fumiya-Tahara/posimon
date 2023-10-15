@@ -93,8 +93,8 @@ main{
 }
 .posimon{
 	max-width: 600px;
-	min-width: 280px;
-	width: 40%;
+	min-width: 300px;
+	width: 50%;
 	position: absolute;
 	bottom: 3%;
 	left: 20%;

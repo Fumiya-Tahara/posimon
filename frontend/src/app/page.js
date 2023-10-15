@@ -2,13 +2,12 @@
 import React from 'react'
 import './globals.css'
 import Link from 'next/link'
-import Talk from './components/talk'
+import Talk from "./components2/talk"; 
 
-export default function Home() {
+export default function Home(){
   return (
 		<body>
 			<header>
-				
 			</header>
 			<main>
 				<div className="wall">
