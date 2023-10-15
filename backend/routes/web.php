@@ -40,6 +40,7 @@ Route::post('/update_posimon/{user_id}/{posimon_id}', [UserInfomation::class, 'u
 Route::post('/add_posimon', [PosimonControllers::class, 'add_posimon']);
 Route::get('/get_posimon/{user_id}', [PosimonControllers::class, 'get_posimon']);
 Route::get('/get_posimon_list/{user_id}', [PosimonControllers::class, 'get_posimon_list']);
+Route::get('/get_posimon_list_full', [PosimonControllers::class, 'get_posimon_list_full']);
 Route::post('/add_posimon_v', [PosimonControllers::class, 'add_posimon_voices']);
 Route::get('/get_posimon_voices/{posimon_id}', [PosimonControllers::class, 'get_posimon_voices']);
 Route::post('/up_positive_thimes', [PosithibCangeControllers::class, 'up_positive_thimes']);
