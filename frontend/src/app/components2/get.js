@@ -25,10 +25,10 @@ async function Get2(){
 		2:"posimon/posizou.png",
 		3:"posimon/kotatu.png",
 		4:"posimon/posidebu.png",
-		5:"posimon/posimika",
+		5:"posimon/posimika.png",
 		6:"posimon/posioka.png",
-		7:"posimon/poland",
-		8:"posimon/pinao"
+		7:"posimon/poland.png",
+		8:"posimon/pinao.png"
 	};
 
 	const src = imgMap[imgId];
