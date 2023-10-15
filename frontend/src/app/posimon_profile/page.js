@@ -32,13 +32,13 @@ export default async function Posimonbook({searchParams}) {
 				<div className="selimg">
 				<img src={imgMap[id]}/>
 				</div>
-				{/* 
-				<div className="profile">
+				 
+				{/*<div className="profile">
 					{data[id]["name"]}
 					<div className="ecology">{data[id]["ecology"]}</div>
 					{data[id]["rarite"]}
 					{data[id]["profile"]}
-				</div> */}
+  </div> */}
 			</div>
 			<div className='floor'>
 				<Link href="/posimon-book">
