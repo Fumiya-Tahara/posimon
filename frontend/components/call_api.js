@@ -15,3 +15,11 @@ export async function callPosimon() {
 
   return data;
 }
+
+// 全ぽじ取得
+export async function callAllPosimon() {
+  const res = await axios.get("http://127.0.0.1:8000/api/get_posimon_list_full");
+  const data = res.data;
+
+  return data;
+}
